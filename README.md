@@ -1,1 +1,1 @@
-In this section, you'll learn how to add an event listener to a parent element and let it handle events on its children.
+Learn how to get a reference to an element's parent node, using the parentNode property.

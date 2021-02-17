@@ -1,21 +1,18 @@
 const toggleList = document.querySelector('#toggleList');
 const listDiv = document.querySelector('.list');
+const listUl = listDiv.querySelector('ul');
 const descriptionInput = document.querySelector('input.description');
 const descriptionP = document.querySelector('p.description');
 const descriptionButton = document.querySelector('button.description');
 const addItemInput = document.querySelector('.addItemInput');
 const addItemButton = document.querySelector('.addItemButton');
-const removeItemButton = document.querySelector('.removeItemButton');
 
-listDiv.addEventListener('mouseover', (event) => {
-  if (event.target.tagName === 'LI') {
-    event.target.textContent = event.target.textContent.toUpperCase();
-  }
-});
-
-listDiv.addEventListener('mouseout', (event) => {
-  if (event.target.tagName === 'LI') {
-    event.target.textContent = event.target.textContent.toLowerCase();
+listUl.addEventListener('click', (event) => {
+  if (event.target.tagName === 'BUTTON') {
+    const button = event.target;
+    const li = button.parentNode;
+    const ul = li.parentNode;
+    ul.removeChild(li);
   }
 });
 
@@ -40,10 +37,4 @@ addItemButton.addEventListener('click', () => {
   li.textContent = addItemInput.value;
   ul.appendChild(li);
   addItemInput.value = '';
-});
-
-removeItemButton.addEventListener('click', () => {
-  let ul = document.querySelector('ul');
-  const lastItem = ul.querySelector('li:last-child');
-  ul.removeChild(lastItem);
 });
