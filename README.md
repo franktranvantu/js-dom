@@ -1,3 +1,3 @@
-When working with HTML, you'll use classes to give elements a particular style with CSS. 
+The last selectors we'll look at are querySelector and querySelectorAll. 
 
-In this section, you'll learn to select elements with the same class, using `document.getElementsByClassName`.
+These are the most flexible of the selectors we've looked at, as they will accept ID's, classes, tag names and more.
