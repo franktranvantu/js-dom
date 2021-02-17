@@ -1,3 +1,13 @@
-JavaScript lets you create interactive web pages which can respond to a user's actions. 
+JavaScript's global environment is full of controls your code can use to make things happen. 
 
-In this course, you'll learn how to bring web pages to life using the power of JavaScript.
+These controls come in the form of JavaScript objects and functions. 
+
+Inside a browser, they allow your code to see and manipulate web pages.
+
+Open the console:
+- window
+- window.alert('I made the broser message me')
+- window.location.href
+
+- document.getElementById('myHeading').style.color = 'purple'
+- document.getElementById('myHeading').style.backgroundColor = 'yellow'
