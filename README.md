@@ -1,1 +1,1 @@
-In this section, we'll select and change the headline color, but this time, we'll do it in response to clicking a button.
+Learn to select an element that doesn't have an ID, or select multiple elements on a page, using getElementsByTagName.
