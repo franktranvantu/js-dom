@@ -1,1 +1,1 @@
-In this section, we'll select an element with JavaScript and start with one of the most common user interactions: clicking.
+In this section, we'll select and change the headline color, but this time, we'll do it in response to clicking a button.
