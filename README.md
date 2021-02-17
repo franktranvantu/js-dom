@@ -1,3 +1,5 @@
-The properties on the style object represent the various CSS properties we can set. 
+We've made several changes to the elements on our page with JavaScript. 
 
-This section covers one common use for setting styles with JavaScript: hiding and unhiding elements on the page.
+Now it's time to take it to the next level and create new elements. 
+
+In this section, you'll create a new element with document.createElement().
