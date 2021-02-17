@@ -1,3 +1,3 @@
-The last selectors we'll look at are querySelector and querySelectorAll. 
+In this section, you'll learn to read and change text using the DOM element properties textContent and innerHTML. 
 
-These are the most flexible of the selectors we've looked at, as they will accept ID's, classes, tag names and more.
+You'll learn how each property has its own approach to the DOM.
