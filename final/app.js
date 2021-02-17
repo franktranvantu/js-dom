@@ -6,6 +6,17 @@ const descriptionButton = document.querySelector('button.description');
 const addItemInput = document.querySelector('.addItemInput');
 const addItemButton = document.querySelector('.addItemButton');
 const removeItemButton = document.querySelector('.removeItemButton');
+const listItems = document.querySelectorAll('li');
+
+for (let i = 0; i < listItems.length; i++) {
+  listItems[i].addEventListener('mouseover', () => {
+    listItems[i].textContent = listItems[i].textContent.toUpperCase();
+  });
+
+  listItems[i].addEventListener('mouseout', () => {
+    listItems[i].textContent = listItems[i].textContent.toLowerCase();
+  });
+}
 
 toggleList.addEventListener('click', () => {
   if (listDiv.style.display === 'none') {
