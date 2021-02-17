@@ -1,1 +1,0 @@
-In this section, we'll select and change the headline color, but this time, we'll do it in response to clicking a button.
