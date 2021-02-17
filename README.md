@@ -1,1 +1,3 @@
-Learn to select an element that doesn't have an ID, or select multiple elements on a page, using getElementsByTagName.
+When working with HTML, you'll use classes to give elements a particular style with CSS. 
+
+In this section, you'll learn to select elements with the same class, using `document.getElementsByClassName`.
