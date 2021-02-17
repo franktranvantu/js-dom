@@ -1,1 +1,0 @@
-Learn how to get a reference to an element's parent node, using the parentNode property.
