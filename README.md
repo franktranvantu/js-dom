@@ -1,1 +1,0 @@
-In this section, you'll learn how to remove elements from the page, using the removeChild method.
