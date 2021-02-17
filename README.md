@@ -1,5 +1,1 @@
-An event received by an element doesn't stop with that one element. 
-
-That event moves to other elements like the parent, and other ancestors of the element. 
-
-This is called "event bubbling".
+In this section, you'll learn how to add an event listener to a parent element and let it handle events on its children.
