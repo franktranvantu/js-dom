@@ -1,1 +1,1 @@
-Learn how to reference a previous sibling with previousElementSibling property, and to insert a node before an element, with insertBefore.
+This section covers a nextElementSibling.

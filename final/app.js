@@ -25,6 +25,16 @@ listUl.addEventListener('click', (event) => {
         ul.insertBefore(li, prevLi);
       }
     }
+
+    if (event.target.className === 'down') {
+      const button = event.target;
+      const li = button.parentNode;
+      const nextLi = li.nextElementSibling;
+      const ul = li.parentNode;
+      if (nextLi) {
+        ul.insertBefore(nextLi, li);
+      }
+    }
   }
 });
 
