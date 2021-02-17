@@ -1,5 +1,3 @@
-We've made several changes to the elements on our page with JavaScript. 
+In the last section, you saw how to create elements, but they won't appear on the page until you add them to the DOM. 
 
-Now it's time to take it to the next level and create new elements. 
-
-In this section, you'll create a new element with document.createElement().
+In this section, you'll select an existing node, then learn to append, or add, a new node as a child.
