@@ -1,1 +1,1 @@
-Learn how to get a reference to an element's parent node, using the parentNode property.
+Learn how to reference a previous sibling with previousElementSibling property, and to insert a node before an element, with insertBefore.

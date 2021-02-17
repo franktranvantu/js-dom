@@ -9,10 +9,22 @@ const addItemButton = document.querySelector('.addItemButton');
 
 listUl.addEventListener('click', (event) => {
   if (event.target.tagName === 'BUTTON') {
-    const button = event.target;
-    const li = button.parentNode;
-    const ul = li.parentNode;
-    ul.removeChild(li);
+    if (event.target.className === 'remove') {
+      const button = event.target;
+      const li = button.parentNode;
+      const ul = li.parentNode;
+      ul.removeChild(li);
+    }
+
+    if (event.target.className === 'up') {
+      const button = event.target;
+      const li = button.parentNode;
+      const prevLi = li.previousElementSibling;
+      const ul = li.parentNode;
+      if (prevLi) {
+        ul.insertBefore(li, prevLi);
+      }
+    }
   }
 });
 
