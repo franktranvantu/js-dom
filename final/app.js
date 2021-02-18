@@ -4,7 +4,8 @@ var list = document.getElementsByTagName('ul')[0];
 
 list.addEventListener('click', function(e) {
   if (e.target.tagName == 'BUTTON') {
-    const li = e.target.parentNode;
-    const prevLi = li.previousSibling;
+    const button = e.target;
+    const prevP = button.previousElementSibling;
+    prevP.className = 'highlight';
   }
 });
