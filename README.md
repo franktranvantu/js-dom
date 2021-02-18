@@ -1,1 +1,1 @@
-This section covers a nextElementSibling.
+Learn to get all children elements of a node, with the children property.

@@ -6,6 +6,28 @@ const descriptionP = document.querySelector('p.description');
 const descriptionButton = document.querySelector('button.description');
 const addItemInput = document.querySelector('.addItemInput');
 const addItemButton = document.querySelector('.addItemButton');
+const list = listUl.children;
+
+function attachListItemButtons(li) {
+  const up = document.createElement('button');
+  up.textContent = 'Up';
+  up.className = 'up';
+  li.appendChild(up);
+
+  const down = document.createElement('button');
+  down.textContent = 'Down';
+  down.className = 'down';
+  li.appendChild(down);
+
+  const remove = document.createElement('button');
+  remove.textContent = 'Remove';
+  remove.className = 'remove';
+  li.appendChild(remove);
+}
+
+for (let i = 0; i < list.length; i++) {
+  attachListItemButtons(list[i]);
+}
 
 listUl.addEventListener('click', (event) => {
   if (event.target.tagName === 'BUTTON') {
@@ -57,6 +79,7 @@ addItemButton.addEventListener('click', () => {
   let ul = document.querySelector('ul');
   let li = document.createElement('li');
   li.textContent = addItemInput.value;
+  attachListItemButtons(li);
   ul.appendChild(li);
   addItemInput.value = '';
 });
