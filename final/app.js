@@ -7,6 +7,11 @@ const descriptionButton = document.querySelector('button.description');
 const addItemInput = document.querySelector('.addItemInput');
 const addItemButton = document.querySelector('.addItemButton');
 const list = listUl.children;
+const firstListItem = listUl.firstElementChild;
+const lastListItem = listUl.lastElementChild;
+
+firstListItem.style.backgroundColor = 'lightskyblue';
+lastListItem.style.backgroundColor = 'lightsteelblue';
 
 function attachListItemButtons(li) {
   const up = document.createElement('button');

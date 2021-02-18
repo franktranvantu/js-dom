@@ -1,1 +1,1 @@
-Learn to get all children elements of a node, with the children property.
+Learn to use firstElementChild to get the first child element of a selected element, and lastElementChild, to get the last element.
