@@ -1,5 +1,8 @@
 // Next, set the text content of the <a> element with the ID link to the value stored in inputValue.
 
-var inputValue = document.querySelector('input#linkName').value;
+var inputValue = document.querySelector('input#linkName');
 var a = document.querySelector('a');
-a.textContent = inputValue;
+
+inputValue.addEventListener('keyup', (event) => {
+  a.textContent = event.target.value;
+})
