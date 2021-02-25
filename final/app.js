@@ -6,14 +6,18 @@ const descriptionButton = document.querySelector('button.description');
 const addItemInput = document.querySelector('.addItemInput');
 const addItemButton = document.querySelector('.addItemButton');
 const removeItemButton = document.querySelector('.removeItemButton');
+const ul = document.querySelector('ul');
 
-listDiv.addEventListener('mouseover', () => {
-  listItems[i].textContent = listItems[i].textContent.toUpperCase();
-});
-
-listDiv.addEventListener('mouseout', () => {
-  listItems[i].textContent = listItems[i].textContent.toLowerCase();
-});
+ul.addEventListener('click', (event) => {
+  console.log('click');
+  if (event.target.tagName === 'LI') {
+    if (event.target.textContent === event.target.textContent.toUpperCase()) {
+      event.target.textContent = event.target.textContent.toLowerCase();
+    } else {
+      event.target.textContent = event.target.textContent.toUpperCase();
+    }
+  }
+})
 
 toggleList.addEventListener('click', () => {
   if (listDiv.style.display === 'none') {
