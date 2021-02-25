@@ -17,7 +17,7 @@ ul.addEventListener('click', (event) => {
       event.target.textContent = event.target.textContent.toUpperCase();
     }
   }
-})
+});
 
 toggleList.addEventListener('click', () => {
   if (listDiv.style.display === 'none') {
