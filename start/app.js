@@ -5,7 +5,6 @@ const descriptionP = document.querySelector('p.description');
 const descriptionButton = document.querySelector('button.description');
 const addItemInput = document.querySelector('.addItemInput');
 const addItemButton = document.querySelector('.addItemButton');
-const removeItemButton = document.querySelector('.removeItemButton');
 
 listDiv.addEventListener('click', (event) => {
 
@@ -32,10 +31,4 @@ addItemButton.addEventListener('click', () => {
   li.textContent = addItemInput.value;
   ul.appendChild(li);
   addItemInput.value = '';
-});
-
-removeItemButton.addEventListener('click', () => {
-  let ul = document.querySelector('ul');
-  const lastItem = ul.querySelector('li:last-child');
-  ul.removeChild(lastItem);
 });
