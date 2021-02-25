@@ -6,16 +6,16 @@ const descriptionButton = document.querySelector('button.description');
 const addItemInput = document.querySelector('.addItemInput');
 const addItemButton = document.querySelector('.addItemButton');
 const removeItemButton = document.querySelector('.removeItemButton');
-const ul = document.querySelector('ul');
 
-ul.addEventListener('click', (event) => {
-  console.log('click');
+listDiv.addEventListener('mouseover', (event) => {
   if (event.target.tagName === 'LI') {
-    if (event.target.textContent === event.target.textContent.toUpperCase()) {
-      event.target.textContent = event.target.textContent.toLowerCase();
-    } else {
-      event.target.textContent = event.target.textContent.toUpperCase();
-    }
+    event.target.textContent = event.target.textContent.toUpperCase();
+  }
+});
+
+listDiv.addEventListener('mouseout', (event) => {
+  if (event.target.tagName === 'LI') {
+    event.target.textContent = event.target.textContent.toLowerCase();
   }
 });
 
