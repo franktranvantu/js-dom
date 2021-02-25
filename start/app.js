@@ -8,9 +8,7 @@ const addItemButton = document.querySelector('.addItemButton');
 const removeItemButton = document.querySelector('.removeItemButton');
 
 listDiv.addEventListener('mouseover', (event) => {
-  if (event.target.tagName === 'LI') {
-    event.target.textContent = event.target.textContent.toUpperCase();
-  }
+
 });
 
 toggleList.addEventListener('click', () => {
