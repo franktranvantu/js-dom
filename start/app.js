@@ -7,7 +7,7 @@ const addItemInput = document.querySelector('.addItemInput');
 const addItemButton = document.querySelector('.addItemButton');
 const removeItemButton = document.querySelector('.removeItemButton');
 
-listDiv.addEventListener('mouseover', (event) => {
+listDiv.addEventListener('click', (event) => {
 
 });
 
