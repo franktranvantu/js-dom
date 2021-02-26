@@ -8,7 +8,7 @@ const addItemInput = document.querySelector('.addItemInput');
 const addItemButton = document.querySelector('.addItemButton');
 
 listUl.addEventListener('click', (event) => {
-  if (event.target.tagName === 'BUTTON') {
+  if (event.target.tagName === 'BUTTON' && event.target.className === 'remove') {
     const button = event.target;
     const li = button.parentNode;
     const ul = li.parentNode;
